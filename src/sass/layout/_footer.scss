@@ -10,6 +10,11 @@
     justify-content: space-between;
     margin-top: 3%;
     background-color: $color-secondary;
+    @include breakpoint(small) {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        height: 80px;
+    }
     &__item {
         display: flex;
         flex-direction: column;

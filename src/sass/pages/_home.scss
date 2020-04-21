@@ -6,6 +6,18 @@
     justify-content: space-between;
     padding-left: 2%;
     padding-right: 2%;
+    @include breakpoint("large") {
+        display: flex;
+        flex-direction: row;
+    }
+    @include breakpoint("medium") {
+        display: flex;
+        flex-direction: column;
+    }
+    @include breakpoint("small") {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 section {

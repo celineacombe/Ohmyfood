@@ -99,6 +99,17 @@
             align-items: center;
             box-shadow: 0 0 10px 0 $box-shadow;
             height: 70vh;
+            @include breakpoint(large) {
+                height: 70vh;
+            }
+            @include breakpoint(medium) {
+                width: 90%;
+                margin: 2% auto 15% auto;
+            }
+            @include breakpoint(small) {
+                width: 90%;
+                margin: 5% auto 15% auto;
+            }
         }
         &--page {
             font-size: 1.25rem;
@@ -106,6 +117,17 @@
             padding-bottom: 2%;
             box-shadow: 0 0 10px 0 $box-shadow;
             color: $color-page;
+            @include breakpoint(medium) {
+                margin: 2% 5% 15% 5%;
+                line-height: 1.5;
+                font-size: 1.5rem;
+                text-align: center;
+            }
+            @include breakpoint(small) {
+                margin: 2% 5% 25% 5%;
+                line-height: 1.5;
+                font-size: 1rem;
+            }
             &--resto1 {
                 font-family: "Kalam";
                 background-color: $color-bg-resto1;
@@ -129,18 +151,41 @@
         width: 80%;
         padding-left: 10%;
         padding-right: 10%;
+        @include breakpoint(small) {
+            width: 94%;
+            padding-left: 3%;
+            padding-right: 3%;
+        }
+        @include breakpoint(medium) {
+            width: 90%;
+            padding-left: 5%;
+            padding-right: 5%;
+        }
         &--title {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
             width: 100%;
+            @include breakpoint(small) {
+                width: 100%;
+            }
         }
         &--item {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
             width: 100%;
+            @include breakpoint("medium") {
+                display: flex;
+                flex-direction: column;
+                padding: 3% 0 3% 0;
+            }
+            @include breakpoint("small") {
+                display: flex;
+                flex-direction: column;
+                padding: 3% 0 3% 0;
+            }
         }
     }
 }
@@ -229,6 +274,9 @@
     width: 127pt;
     height: 9pt;
     stroke: none;
+    @include breakpoint(small) {
+        width: 60pt;
+    }
     &__left {
         display: flex;
         justify-content: start;
