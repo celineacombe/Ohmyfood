@@ -328,3 +328,13 @@
         }
     }
 }
+
+/* DECORATIVE MENU LINE - CHROME BUG FIX */
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+    .deco__resto1,
+    .deco__resto2,
+    .deco__resto3,
+    .deco__resto4 {
+        width: 100%;
+    }
+}
