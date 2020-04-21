@@ -1,0 +1,70 @@
+//  COLOR BASE
+$color-primary: #ffffff;
+$color-secondary: #579c87;
+$color-text: #fdcb46;
+$color-page: #000000;
+$box-shadow: #989997;
+
+// COLOR MENU 1
+$color-bg-resto1: #fcdfdb;
+$color-text-resto1: #3d1319; // for all brown text
+$color-gradient-start-resto1: #f05160;
+$color-gradient-middle-resto1: #f16464;
+$color-gradient-end-resto1: #f6916a;
+$color-animline-resto1: $color-gradient-start-resto1;
+
+// COLOR MENU 2
+$color-bg-resto2: #fff5fe;
+$color-text-resto2: #c77412; // "Menu" of homepage
+$color-text-1-resto2: #c67412;
+$color-text-2-resto2: #a56799;
+$color-text-3-resto2: #6e4ccc;
+$color-gradient-start-resto2: $color-text-1-resto2;
+$color-gradient-middle-resto2: $color-text-2-resto2;
+$color-gradient-end-resto2: $color-text-3-resto2;
+$color-animline-1-resto2: $color-text-1-resto2;
+$color-animline-2-resto2: $color-text-2-resto2;
+$color-animline-2-resto2: $color-text-3-resto2;
+
+// COLOR MENU 3
+$color-bg-resto3: #edefef;
+$color-text-resto3: #0887fb; // "Menu" of homepage
+$color-text-1-resto3: #0228dd;
+$color-text-2-resto3: #0670f3;
+$color-text-3-resto3: #229df9;
+$color-animline-1-resto3: $color-text-1-resto3;
+$color-animline-2-resto3: $color-text-2-resto3;
+$color-animline-3-resto3: $color-text-3-resto3;
+$color-gradient-start-resto3: $color-text-1-resto3;
+$color-gradient-middle-resto3: $color-text-2-resto3;
+$color-gradient-end-resto3: $color-text-3-resto3;
+
+// COLOR MENU 4
+$color-bg-resto4: #fdfffd;
+$color-text-resto4: #72bf56; // "Menu" of homepage
+$color-text-1-resto4: #3e923a;
+$color-text-2-resto4: #79c55a;
+$color-text-3-resto4: #beff7f;
+$color-gradient-start-resto4: $color-text-1-resto4;
+$color-gradient-middle-resto4: $color-text-2-resto4;
+$color-gradient-end-resto4: $color-text-3-resto4;
+
+//  MEDIA QUERIES (https://www.sitepoint.com/managing-responsive-breakpoints-sass/)
+
+$screen: "only screen";
+
+$small: "#{$screen} and (max-width: 767px)";
+$medium: "#{$screen} and (max-width: 992px)";
+$large: "#{$screen} and (max-width: 1200px)";
+$x-large: "#{$screen} and (min-width: 1201px)";
+
+$breakpoints: (
+    //mobile
+        "small": #{$small},
+    // tablet
+        "medium": #{$medium},
+    // laptop
+        "large": #{$large},
+    //x-large
+        "x-large": #{$x-large}
+);
