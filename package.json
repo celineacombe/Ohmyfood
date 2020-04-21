@@ -1,0 +1,20 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "Ohmyfood est une entreprise de réservations de restaurants et de composition de menus en ligne",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./src/sass/main.scss:./public/assets/css/style.css",
+    "prefix": "postcss ./css/style.css --use autoprefixer -d ./public/assets/css/prefixed/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/celineacombe/Ohmyfood.git"
+  },
+  "author": "Céline Combe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/celineacombe/Ohmyfood/issues"
+  },
+  "homepage": "https://github.com/celineacombe/Ohmyfood#readme"
+}
