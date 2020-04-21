@@ -1,0 +1,22 @@
+/* TYPOGRAPHY */
+html {
+    font-size: 100%;
+}
+
+body {
+    font-size: 100%;
+    line-height: 2;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3[class*="title"] {
+    font-size: 2.5rem;
+}
+
+h4 {
+    font-weight: bold;
+}

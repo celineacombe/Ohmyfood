@@ -1,0 +1,20 @@
+/* Error: Undefined variable.
+ *   ,
+ * 3 |     background-color: $color-primary;
+ *   |                       ^^^^^^^^^^^^^^
+ *   '
+ *   src\sass\base\_base.scss 3:23  @import
+ *   src\sass\main.scss 7:24        root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a   \2577 \a 3 \2502      background-color: $color-primary;\d\a   \2502                        ^^^^^^^^^^^^^^\a   \2575 \a   src\\sass\\base\\_base.scss 3:23  @import\a   src\\sass\\main.scss 7:24        root stylesheet";
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3N0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTs7Ozs7O3FEQU1xRDs7QUFFckQ7RUFDRTs2Q0FDMkM7RUFDM0MsZ0JBQWdCO0VBQ2hCLGNBQWM7RUFDZCxZQUFZO0VBQ1osa0JBQWtCO0VBQ2xCLDhCQUE4QjtFQUM5QixpUUFBaVE7QUFDblEiLCJmaWxlIjoic3R5bGUuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLyogRXJyb3I6IFVuZGVmaW5lZCB2YXJpYWJsZS5cbiAqICAgLFxuICogMyB8ICAgICBiYWNrZ3JvdW5kLWNvbG9yOiAkY29sb3ItcHJpbWFyeTtcclxuICogICB8ICAgICAgICAgICAgICAgICAgICAgICBeXl5eXl5eXl5eXl5eXlxuICogICAnXG4gKiAgIHNyY1xcc2Fzc1xcYmFzZVxcX2Jhc2Uuc2NzcyAzOjIzICBAaW1wb3J0XG4gKiAgIHNyY1xcc2Fzc1xcbWFpbi5zY3NzIDc6MjQgICAgICAgIHJvb3Qgc3R5bGVzaGVldCAqL1xuXG5ib2R5OjpiZWZvcmUge1xuICBmb250LWZhbWlseTogXCJTb3VyY2UgQ29kZSBQcm9cIiwgXCJTRiBNb25vXCIsIE1vbmFjbywgSW5jb25zb2xhdGEsIFwiRmlyYSBNb25vXCIsXG4gICAgICBcIkRyb2lkIFNhbnMgTW9ub1wiLCBtb25vc3BhY2UsIG1vbm9zcGFjZTtcbiAgd2hpdGUtc3BhY2U6IHByZTtcbiAgZGlzcGxheTogYmxvY2s7XG4gIHBhZGRpbmc6IDFlbTtcbiAgbWFyZ2luLWJvdHRvbTogMWVtO1xuICBib3JkZXItYm90dG9tOiAycHggc29saWQgYmxhY2s7XG4gIGNvbnRlbnQ6IFwiRXJyb3I6IFVuZGVmaW5lZCB2YXJpYWJsZS5cXGEgICBcXDI1NzcgXFxhIDMgXFwyNTAyICAgICAgYmFja2dyb3VuZC1jb2xvcjogJGNvbG9yLXByaW1hcnk7XFxkXFxhICAgXFwyNTAyICAgICAgICAgICAgICAgICAgICAgICAgXl5eXl5eXl5eXl5eXl5cXGEgICBcXDI1NzUgXFxhICAgc3JjXFxcXHNhc3NcXFxcYmFzZVxcXFxfYmFzZS5zY3NzIDM6MjMgIEBpbXBvcnRcXGEgICBzcmNcXFxcc2Fzc1xcXFxtYWluLnNjc3MgNzoyNCAgICAgICAgcm9vdCBzdHlsZXNoZWV0XCI7XG59XG4iXX0= */

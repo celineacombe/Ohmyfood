@@ -1,0 +1,20 @@
+/* HEADER */
+
+header {
+    height: 70px;
+    width: 100%;
+}
+.header {
+    background-color: $color-secondary;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    &__heading {
+        color: $color-text;
+        font-family: "Open sans", "Helvetica", "Arial", "sans serif";
+        font-size: 3rem;
+        font-weight: 800;
+    }
+}

@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "sass": "sass --watch ./src/sass/main.scss:./public/assets/css/style.css",
-    "prefix": "postcss ./css/style.css --use autoprefixer -d ./public/assets/css/prefixed/"
+    "prefix": "postcss ./public/assets/css/style.css --use autoprefixer -d ./public/assets/css/prefixed/"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,5 @@
   "bugs": {
     "url": "https://github.com/celineacombe/Ohmyfood/issues"
   },
-  "homepage": "https://github.com/celineacombe/Ohmyfood#readme"
+  "homepage": "https://github.com/celineacombe/Ohmyfood/index.html"
 }

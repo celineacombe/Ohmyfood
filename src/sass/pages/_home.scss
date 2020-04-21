@@ -1,0 +1,29 @@
+/* HOME PAGE (index.html) */
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+section {
+    width: 20%;
+    text-align: center;
+}
+
+.menu__subtitle {
+    &--resto1 {
+        color: $color-text-resto1;
+    }
+    &--resto2 {
+        color: $color-text-resto2;
+    }
+    &--resto3 {
+        color: $color-text-resto3;
+    }
+    &--resto4 {
+        color: $color-text-resto4;
+    }
+}
