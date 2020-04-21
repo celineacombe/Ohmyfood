@@ -1,0 +1,282 @@
+/* MENU - CONFIG FOR HOME-PAGE AND MENU-PAGE */
+
+.menu {
+    &__intro {
+        font-size: 2rem;
+        width: 100%;
+        color: $color-page;
+        text-align: center;
+    }
+    &__title {
+        &--start {
+            padding-top: 5%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+        &--end {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            width: 100%;
+        }
+        &__img--resto1 {
+            padding-left: 2%;
+            padding-right: 2%;
+            width: 25pt;
+            height: 27pt;
+        }
+        &--resto1 {
+            color: $color-text-resto1;
+            margin-top: 0;
+            font-family: "Devonshire";
+        }
+        &--resto2 {
+            font-family: "Croissant one";
+            background-clip: text;
+            color: transparent;
+            background-image: linear-gradient(
+                to right,
+                $color-gradient-start-resto2,
+                $color-gradient-middle-resto2,
+                $color-gradient-end-resto2
+            );
+            &--home {
+                font-size: 1.25rem;
+            }
+        }
+        &--resto3 {
+            font-family: "Parisienne";
+            background-clip: text;
+            color: transparent;
+            background-image: linear-gradient(
+                to right,
+                $color-gradient-start-resto3,
+                $color-gradient-middle-resto3,
+                $color-gradient-end-resto3
+            );
+        }
+        &--resto4 {
+            font-family: "Kaushan script";
+            background-clip: text;
+            color: transparent;
+            background-image: linear-gradient(
+                to right,
+                $color-gradient-start-resto4,
+                $color-gradient-middle-resto4,
+                $color-gradient-end-resto4
+            );
+        }
+    }
+    &__subtitle {
+        &--resto1 {
+            font-family: "Tillana";
+            text-transform: uppercase;
+        }
+        &--resto2 {
+            font-family: "Libre baskerville";
+        }
+        &--resto3 {
+            font-family: "Tillana";
+        }
+        &--resto4 {
+            font-family: "Tillana";
+        }
+    }
+    &__link {
+        transition: all 0.8s ease-in-out;
+    }
+    &__card {
+        &--home {
+            margin: 5% auto 5% auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 0 10px 0 $box-shadow;
+            height: 70vh;
+        }
+        &--page {
+            font-size: 1.25rem;
+            margin: auto 25% 10% 25%;
+            padding-bottom: 2%;
+            box-shadow: 0 0 10px 0 $box-shadow;
+            color: $color-page;
+            &--resto1 {
+                font-family: "Kalam";
+                background-color: $color-bg-resto1;
+                color: $color-text-resto1;
+            }
+            &--resto2 {
+                font-family: "Libre baskerville";
+                background-color: $color-bg-resto2;
+            }
+            &--resto3 {
+                font-family: "Tillana";
+                background-color: $color-bg-resto3;
+            }
+            &--resto4 {
+                font-family: "Tillana";
+                background-color: $color-bg-resto4;
+            }
+        }
+    }
+    &__stage {
+        width: 80%;
+        padding-left: 10%;
+        padding-right: 10%;
+        &--title {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+        &--item {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+        }
+    }
+}
+
+/* COLOR CATEGORY RESTO 4 */
+.menu__starter {
+    &--resto2 {
+        color: $color-text-1-resto2;
+    }
+}
+.menu__dish {
+    &--resto2 {
+        color: $color-text-2-resto2;
+    }
+}
+.menu__dessert {
+    &--resto2 {
+        color: $color-text-3-resto2;
+    }
+}
+
+/* CATEGORY LINE */
+.line {
+    box-sizing: inherit;
+    position: relative;
+    white-space: pre;
+    line-height: 1.2;
+    &:hover {
+        animation: animline 400ms ease-in-out;
+        animation-fill-mode: forwards;
+    }
+    &__resto1 {
+        border-bottom: solid 2px $color-bg-resto1;
+        &:hover {
+            border-bottom: solid 2px $color-gradient-start-resto1;
+        }
+    }
+    &__resto2 {
+        border-bottom: solid 2px $color-bg-resto2;
+        &--starter {
+            &:hover {
+                border-bottom: solid 2px $color-text-1-resto2;
+            }
+        }
+        &--dish {
+            &:hover {
+                border-bottom: solid 2px $color-text-2-resto2;
+            }
+        }
+        &--dessert {
+            &:hover {
+                border-bottom: solid 2px $color-text-3-resto2;
+            }
+        }
+    }
+    &__resto3 {
+        border-bottom: solid 2px $color-bg-resto3;
+        &--starter {
+            &:hover {
+                border-bottom: solid 2px $color-text-1-resto3;
+            }
+        }
+        &--dish {
+            &:hover {
+                border-bottom: solid 2px $color-text-2-resto3;
+            }
+        }
+        &--dessert {
+            &:hover {
+                border-bottom: solid 2px $color-text-3-resto3;
+            }
+        }
+    }
+    &__resto4 {
+        border-bottom: solid 2px $color-bg-resto4;
+        &:hover {
+            border-bottom: solid 2px $color-text-1-resto4;
+        }
+    }
+}
+
+/* DECORATIVE MENU LINE */
+.deco {
+    display: flex;
+    align-items: center;
+    width: 127pt;
+    height: 9pt;
+    stroke: none;
+    &__left {
+        display: flex;
+        justify-content: start;
+    }
+    &__right {
+        display: flex;
+        justify-content: end;
+    }
+    &__resto1 {
+        &--starter {
+            color: $color-text-resto1;
+            fill: $color-text-resto1;
+        }
+        &--dish {
+            color: $color-text-resto1;
+            fill: $color-text-resto1;
+        }
+        &--dessert {
+            color: $color-text-resto1;
+            fill: $color-text-resto1;
+        }
+    }
+    &__resto2 {
+        &--starter {
+            color: $color-text-1-resto2;
+            fill: $color-text-1-resto2;
+        }
+        &--dish {
+            color: $color-text-2-resto2;
+            fill: $color-text-2-resto2;
+        }
+        &--dessert {
+            color: $color-text-3-resto2;
+            fill: $color-text-3-resto2;
+        }
+    }
+    &__resto3 {
+        &--starter {
+            color: $color-text-1-resto3;
+            fill: $color-text-1-resto3;
+        }
+        &--dish {
+            color: $color-text-2-resto3;
+            fill: $color-text-2-resto3;
+        }
+        &--dessert {
+            color: $color-text-3-resto3;
+            fill: $color-text-3-resto3;
+        }
+    }
+}

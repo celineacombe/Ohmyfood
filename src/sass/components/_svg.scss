@@ -1,0 +1,33 @@
+/* COMPONENT SVG */
+
+/* HOME PAGE MUSIC NOTE */
+.music {
+    fill: url(#GradientMusic);
+}
+.stop1-note {
+    stop-color: $color-gradient-start-resto1;
+}
+.stop2-note {
+    stop-color: $color-gradient-middle-resto1;
+}
+.stop3-note {
+    stop-color: $color-gradient-end-resto1;
+}
+
+/* DECO RESTO 4 */
+.svg-menu4-left {
+    fill: url(#Gradient1L);
+}
+.svg-menu4-right {
+    fill: url(#Gradient1R);
+}
+
+.stopdark {
+    stop-color: $color-gradient-start-resto4;
+}
+.stopmedium {
+    stop-color: $color-gradient-middle-resto4;
+}
+.stoplight {
+    stop-color: $color-gradient-end-resto4;
+}

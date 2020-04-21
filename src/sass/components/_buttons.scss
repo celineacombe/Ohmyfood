@@ -1,0 +1,27 @@
+/* COMING SOON */
+.btn {
+    width: auto;
+    text-align: center;
+    margin-bottom: 10%;
+    &--soon {
+        font-family: "Open sans", "Helvetica", "Arial", "sans serif";
+        font-size: 1.625rem;
+        color: $color-text;
+        background-color: $color-secondary;
+        padding: 3px 5px 3px 5px;
+        border-radius: 5px;
+        border-style: none;
+        & span {
+            animation-name: ellipsis;
+            animation-duration: 1.4s;
+            animation-iteration-count: infinite;
+            animation-fill-mode: both;
+            &:nth-child(2) {
+                animation-delay: 0.2s;
+            }
+            &:nth-child(3) {
+                animation-delay: 0.4s;
+            }
+        }
+    }
+}

@@ -1,0 +1,14 @@
+/* BASE */
+body {
+    background-color: $color-primary;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.legal-notice {
+    display: flex;
+    flex-direction: column;
+}
