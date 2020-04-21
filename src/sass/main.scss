@@ -1,0 +1,17 @@
+// 1 - Utils
+@import "utils/variables", "utils/mixins", "utils/animations";
+
+// 2 - Vendors
+
+// 3 - Base
+@import "base/resets", "base/base", "base/typography";
+// 4 - Components
+@import "components/buttons", "components/svg";
+
+// 5 - Layout
+@import "layout/header", "layout/footer";
+
+// 6 - Pages
+@import "pages/home", "pages/menus";
+
+// 7 - Themes

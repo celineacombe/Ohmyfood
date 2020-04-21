@@ -1,0 +1,30 @@
+/**
+ * CONTENTS
+ *
+ * //BASE
+ * Base...................
+ * Resets.................
+ * Typography.............
+ *
+ * //COMPONENTS
+ * Buttons................
+ * Svg....................
+ *
+ * //LAYOUT
+ * Footer.................Footer
+ * Header.................Header
+ *
+ * //PAGES
+ * Home...................The main page index
+ * Menus..................The main page restaurant
+ *
+ * //THEMES
+ *
+ *
+ * //UTILS
+ * Animations.............Useful animations.
+ * Mixins.................Useful mixins.
+ * Variables..............Useful variables (site-color / breakpoints responsive).
+ *
+ * 
+ */
