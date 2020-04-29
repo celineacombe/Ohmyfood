@@ -26,6 +26,9 @@ section {
 }
 
 .menu__subtitle {
+    @include breakpoint(medium) {
+        font-size: 2.5rem;
+    }
     &--resto1 {
         color: $color-text-resto1;
     }
