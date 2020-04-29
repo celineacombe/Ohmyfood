@@ -23,6 +23,7 @@
             text-align: center;
             align-items: center;
             width: 100%;
+            padding-top: 2rem;
         }
         &__img--resto1 {
             padding-left: 2%;
@@ -115,7 +116,7 @@
             }
         }
         &--page {
-            font-size: 1.25rem;
+            font-size: 1.2rem;
             margin: auto 25% 10% 25%;
             padding-bottom: 2%;
             box-shadow: 0 0 10px 0 $box-shadow;
@@ -172,6 +173,8 @@
             justify-content: space-between;
             align-items: center;
             width: 100%;
+            padding-top: 2rem;
+            padding-bottom: 1rem;
             @include breakpoint(small) {
                 width: 100%;
             }
@@ -219,18 +222,17 @@
     position: relative;
     white-space: pre;
     line-height: 1.2;
+    border-bottom: solid 2px transparent;
     &:hover {
         animation: animline 400ms ease-in-out;
         animation-fill-mode: forwards;
     }
     &__resto1 {
-        border-bottom: solid 2px $color-bg-resto1;
         &:hover {
             border-bottom: solid 2px $color-gradient-start-resto1;
         }
     }
     &__resto2 {
-        border-bottom: solid 2px $color-bg-resto2;
         &--starter {
             &:hover {
                 border-bottom: solid 2px $color-text-1-resto2;
@@ -248,7 +250,6 @@
         }
     }
     &__resto3 {
-        border-bottom: solid 2px $color-bg-resto3;
         &--starter {
             &:hover {
                 border-bottom: solid 2px $color-text-1-resto3;
@@ -266,7 +267,6 @@
         }
     }
     &__resto4 {
-        border-bottom: solid 2px $color-bg-resto4;
         &:hover {
             border-bottom: solid 2px $color-text-1-resto4;
         }

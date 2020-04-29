@@ -301,6 +301,9 @@ section {
   text-align: center;
 }
 
+.menu__subtitle {
+  font-size: 2rem;
+}
 @media only screen and (max-width: 992px) {
   .menu__subtitle {
     /* only screen and (max-width: 992px)  */
@@ -342,6 +345,7 @@ section {
   text-align: center;
   align-items: center;
   width: 100%;
+  padding-top: 2rem;
 }
 .menu__title__img--resto1 {
   padding-left: 2%;
@@ -427,7 +431,7 @@ section {
   }
 }
 .menu__card--page {
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   margin: auto 25% 10% 25%;
   padding-bottom: 2%;
   box-shadow: 0 0 10px 0 #989997;
@@ -499,6 +503,8 @@ section {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
 }
 @media only screen and (max-width: 767px) {
   .menu__stage--title {
@@ -549,19 +555,14 @@ section {
   position: relative;
   white-space: pre;
   line-height: 1.2;
+  border-bottom: solid 2px transparent;
 }
 .line:hover {
   animation: animline 400ms ease-in-out;
   animation-fill-mode: forwards;
 }
-.line__resto1 {
-  border-bottom: solid 2px #fcdfdb;
-}
 .line__resto1:hover {
   border-bottom: solid 2px #f05160;
-}
-.line__resto2 {
-  border-bottom: solid 2px #fff5fe;
 }
 .line__resto2--starter:hover {
   border-bottom: solid 2px #c67412;
@@ -572,9 +573,6 @@ section {
 .line__resto2--dessert:hover {
   border-bottom: solid 2px #6e4ccc;
 }
-.line__resto3 {
-  border-bottom: solid 2px #edefef;
-}
 .line__resto3--starter:hover {
   border-bottom: solid 2px #0228dd;
 }
@@ -583,9 +581,6 @@ section {
 }
 .line__resto3--dessert:hover {
   border-bottom: solid 2px #229df9;
-}
-.line__resto4 {
-  border-bottom: solid 2px #fdfffd;
 }
 .line__resto4:hover {
   border-bottom: solid 2px #3e923a;
