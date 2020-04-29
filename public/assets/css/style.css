@@ -524,7 +524,7 @@ section {
     display: flex;
     flex-direction: row;
     padding: 3% 0 3% 0;
-    line-height: 0;
+    line-height: 1;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -533,6 +533,8 @@ section {
     display: flex;
     flex-direction: column;
     padding: 3% 0 3% 0;
+    line-height: 1;
+    text-align: center;
   }
 }
 

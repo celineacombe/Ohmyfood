@@ -188,12 +188,14 @@
                 display: flex;
                 flex-direction: row;
                 padding: 3% 0 3% 0;
-                line-height: 0;
+                line-height: 1;
             }
             @include breakpoint("small") {
                 display: flex;
                 flex-direction: column;
                 padding: 3% 0 3% 0;
+                line-height: 1;
+                text-align: center;
             }
         }
     }
