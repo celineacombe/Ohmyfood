@@ -23,12 +23,16 @@
             text-align: center;
             align-items: center;
             width: 100%;
+            padding-top: 2rem;
         }
         &__img--resto1 {
             padding-left: 2%;
             padding-right: 2%;
             width: 25pt;
             height: 27pt;
+            @include breakpoint(medium) {
+                width: 50pt;
+            }
         }
         &--resto1 {
             color: $color-text-resto1;
@@ -112,20 +116,22 @@
             }
         }
         &--page {
-            font-size: 1.25rem;
+            font-size: 1.2rem;
             margin: auto 25% 10% 25%;
             padding-bottom: 2%;
             box-shadow: 0 0 10px 0 $box-shadow;
             color: $color-page;
+            @include breakpoint(x-large) {
+                height: 900px;
+            }
             @include breakpoint(medium) {
                 margin: 2% 5% 15% 5%;
-                line-height: 1.5;
+                line-height: 1;
                 font-size: 1.5rem;
-                text-align: center;
             }
             @include breakpoint(small) {
                 margin: 2% 5% 25% 5%;
-                line-height: 1.5;
+                line-height: 1;
                 font-size: 1rem;
             }
             &--resto1 {
@@ -167,6 +173,8 @@
             justify-content: space-between;
             align-items: center;
             width: 100%;
+            padding-top: 2rem;
+            padding-bottom: 1rem;
             @include breakpoint(small) {
                 width: 100%;
             }
@@ -178,13 +186,16 @@
             width: 100%;
             @include breakpoint("medium") {
                 display: flex;
-                flex-direction: column;
+                flex-direction: row;
                 padding: 3% 0 3% 0;
+                line-height: 1;
             }
             @include breakpoint("small") {
                 display: flex;
                 flex-direction: column;
                 padding: 3% 0 3% 0;
+                line-height: 1;
+                text-align: center;
             }
         }
     }
@@ -213,18 +224,17 @@
     position: relative;
     white-space: pre;
     line-height: 1.2;
+    border-bottom: solid 2px transparent;
     &:hover {
         animation: animline 400ms ease-in-out;
         animation-fill-mode: forwards;
     }
     &__resto1 {
-        border-bottom: solid 2px $color-bg-resto1;
         &:hover {
             border-bottom: solid 2px $color-gradient-start-resto1;
         }
     }
     &__resto2 {
-        border-bottom: solid 2px $color-bg-resto2;
         &--starter {
             &:hover {
                 border-bottom: solid 2px $color-text-1-resto2;
@@ -242,7 +252,6 @@
         }
     }
     &__resto3 {
-        border-bottom: solid 2px $color-bg-resto3;
         &--starter {
             &:hover {
                 border-bottom: solid 2px $color-text-1-resto3;
@@ -260,7 +269,6 @@
         }
     }
     &__resto4 {
-        border-bottom: solid 2px $color-bg-resto4;
         &:hover {
             border-bottom: solid 2px $color-text-1-resto4;
         }
@@ -326,5 +334,15 @@
             color: $color-text-3-resto3;
             fill: $color-text-3-resto3;
         }
+    }
+}
+
+/* DECORATIVE MENU LINE - CHROME BUG FIX */
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+    .deco__resto1,
+    .deco__resto2,
+    .deco__resto3,
+    .deco__resto4 {
+        width: 100%;
     }
 }
