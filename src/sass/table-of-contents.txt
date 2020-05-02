@@ -2,13 +2,13 @@
  * CONTENTS
  *
  * //BASE
- * Base...................
- * Resets.................
- * Typography.............
+ * Base...................Common rules for all pages
+ * Resets.................Reset/normalize
+ * Typography.............Typography common rules 
  *
  * //COMPONENTS
- * Buttons................
- * Svg....................
+ * Buttons................Button "soon"
+ * Svg....................Color for category decoration
  *
  * //LAYOUT
  * Footer.................Footer
@@ -17,9 +17,7 @@
  * //PAGES
  * Home...................The main page index
  * Menus..................The main page restaurant
- *
- * //THEMES
- *
+ * Legal-notice...........The main page legal notice
  *
  * //UTILS
  * Animations.............Useful animations.
