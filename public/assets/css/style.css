@@ -8,6 +8,11 @@
     transform: scale(1.09);
   }
 }
+@media only screen and (max-width: 992px) {
+  .menu__link:hover {
+    transform: scale(1.05);
+  }
+}
 
 /* MENU-CARD - ANIMATION LINE */
 @keyframes animline {
@@ -261,33 +266,42 @@ header {
 
 /* HOME PAGE (index.html) */
 .container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   padding-left: 2%;
   padding-right: 2%;
 }
+
+.bloc__menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 60%;
+  margin: auto;
+}
 @media only screen and (max-width: 1200px) {
-  .container {
+  .bloc__menu {
     display: flex;
     flex-direction: row;
   }
 }
 @media only screen and (max-width: 992px) {
-  .container {
+  .bloc__menu {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    width: 96%;
+    margin: 10% 2% 10% 2%;
   }
 }
 @media only screen and (max-width: 767px) {
-  .container {
+  .bloc__menu {
     display: flex;
     flex-direction: column;
+    width: 96%;
+    margin: 10% 2% 10% 2%;
   }
 }
 
 section {
-  width: 20%;
+  width: 40%;
   text-align: center;
 }
 
@@ -400,19 +414,20 @@ section {
 }
 @media only screen and (max-width: 1200px) {
   .menu__card--home {
-    height: 70vh;
+    height: 40vh;
   }
 }
 @media only screen and (max-width: 992px) {
   .menu__card--home {
-    width: 90%;
-    margin: 2% auto 15% auto;
+    width: 45%;
+    margin: auto;
   }
 }
 @media only screen and (max-width: 767px) {
   .menu__card--home {
     width: 90%;
     margin: 5% auto 15% auto;
+    height: 55vh;
   }
 }
 .menu__card--page {

@@ -1,27 +1,39 @@
 /* HOME PAGE (index.html) */
 
 .container {
+    // display: flex;
+    // flex-direction: row;
+    // justify-content: space-between;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.bloc__menu {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-left: 2%;
-    padding-right: 2%;
+    width: 60%;
+    margin: auto;
     @include breakpoint("large") {
         display: flex;
         flex-direction: row;
     }
     @include breakpoint("medium") {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        width: 96%;
+        margin: 10% 2% 10% 2%;
     }
     @include breakpoint("small") {
         display: flex;
         flex-direction: column;
+        width: 96%;
+        margin: 10% 2% 10% 2%;
     }
 }
 
 section {
-    width: 20%;
+    width: 40%;
     text-align: center;
 }
 

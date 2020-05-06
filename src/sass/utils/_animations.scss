@@ -5,6 +5,9 @@
     @include breakpoint(large) {
         transform: scale(1.09);
     }
+    @include breakpoint(medium) {
+        transform: scale(1.05);
+    }
 }
 
 /* MENU-CARD - ANIMATION LINE */

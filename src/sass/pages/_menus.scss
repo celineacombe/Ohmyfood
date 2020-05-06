@@ -104,15 +104,16 @@
             box-shadow: 0 0 10px 0 $box-shadow;
             height: 70vh;
             @include breakpoint(large) {
-                height: 70vh;
+                height: 40vh;
             }
             @include breakpoint(medium) {
-                width: 90%;
-                margin: 2% auto 15% auto;
+                width: 45%;
+                margin: auto;
             }
             @include breakpoint(small) {
                 width: 90%;
                 margin: 5% auto 15% auto;
+                height: 55vh;
             }
         }
         &--page {
