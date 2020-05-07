@@ -6,7 +6,13 @@
         width: 100%;
         color: $color-page;
         text-align: center;
+        & h2 {
+            @include breakpoint(small) {
+                font-size: 1.5rem;
+            }
+        }
     }
+
     &__title {
         &--start {
             padding-top: 5%;
@@ -41,39 +47,51 @@
         }
         &--resto2 {
             font-family: "Croissant one";
-            background-clip: text;
-            color: transparent;
-            background-image: linear-gradient(
+
+            background: linear-gradient(
                 to right,
                 $color-gradient-start-resto2,
                 $color-gradient-middle-resto2,
                 $color-gradient-end-resto2
             );
+            //
+            // background-clip: text;
+            // color: transparent;
+
+            /* Workaround for validation W3C */
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
             &--home {
                 font-size: 1.25rem;
             }
         }
         &--resto3 {
             font-family: "Parisienne";
-            background-clip: text;
-            color: transparent;
-            background-image: linear-gradient(
+            background: linear-gradient(
                 to right,
                 $color-gradient-start-resto3,
                 $color-gradient-middle-resto3,
                 $color-gradient-end-resto3
             );
+            // background-clip: text;
+            // color: transparent;
+            /* Workaround for validation W3C */
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
         &--resto4 {
             font-family: "Kaushan script";
-            background-clip: text;
-            color: transparent;
             background-image: linear-gradient(
                 to right,
                 $color-gradient-start-resto4,
                 $color-gradient-middle-resto4,
                 $color-gradient-end-resto4
             );
+            // background-clip: text;
+            // color: transparent;
+            /* Workaround for validation W3C */
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
     }
     &__subtitle {

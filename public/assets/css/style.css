@@ -333,6 +333,11 @@ section {
   color: #000000;
   text-align: center;
 }
+@media only screen and (max-width: 767px) {
+  .menu__intro h2 {
+    font-size: 1.5rem;
+  }
+}
 .menu__title--start {
   padding-top: 5%;
   display: flex;
@@ -368,24 +373,27 @@ section {
 }
 .menu__title--resto2 {
   font-family: "Croissant one";
-  background-clip: text;
-  color: transparent;
-  background-image: linear-gradient(to right, #c67412, #a56799, #6e4ccc);
+  background: linear-gradient(to right, #c67412, #a56799, #6e4ccc);
+  /* Workaround for validation W3C */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .menu__title--resto2--home {
   font-size: 1.25rem;
 }
 .menu__title--resto3 {
   font-family: "Parisienne";
-  background-clip: text;
-  color: transparent;
-  background-image: linear-gradient(to right, #0228dd, #0670f3, #229df9);
+  background: linear-gradient(to right, #0228dd, #0670f3, #229df9);
+  /* Workaround for validation W3C */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .menu__title--resto4 {
   font-family: "Kaushan script";
-  background-clip: text;
-  color: transparent;
   background-image: linear-gradient(to right, #3e923a, #79c55a, #beff7f);
+  /* Workaround for validation W3C */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .menu__subtitle--resto1 {
   font-family: "Tillana";
